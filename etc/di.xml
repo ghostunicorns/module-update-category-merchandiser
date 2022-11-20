@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="gu_update_category_merch" xsi:type="object">
+                    GhostUnicorns\UpdateCategoryMerchandiser\Console\Command\UpdateCategoryMerchandiserCommand
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="GhostUnicorns\UpdateCategoryMerchandiser\Console\Command\UpdateCategoryMerchandiserCommand">
+        <arguments>
+            <argument name="name" xsi:type="string">category:merchandiser:update</argument>
+        </arguments>
+    </type>
+</config>

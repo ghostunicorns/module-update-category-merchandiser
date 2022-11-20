@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="visualmerchandiser">
+            <group id="options">
+                <field id="cron_enabled" translate="label"
+                       type="select" sortOrder="500" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable automatic category update by Cron</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Cron run: At minute 45 past every 6th hour.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
