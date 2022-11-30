@@ -4,7 +4,7 @@
     <group id="gu_update_category_merchandiser_group">
         <job name="gu_update_category_merchandiser" instance="GhostUnicorns\UpdateCategoryMerchandiser\Cron\UpdateCategoryMerchandiser"
              method="execute">
-            <schedule>* */6 * * *</schedule>
+            <schedule>*/30 * * * *</schedule>
         </job>
     </group>
 </config>
